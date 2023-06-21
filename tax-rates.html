@@ -287,57 +287,65 @@
                 <form>
                     <div class="form-check margin-t">
                       <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Enable GST<img src="images/icons/about.svg">
-                      </label>
+                      <span class="form-check-label" for="defaultCheck1">
+                        Enable GST<i class="ri-information-fill"></i>
+                      </span>
                     </div>
 
                     <div class="form-check margin-t">
                       <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Enable HSN/SAC Code<img src="images/icons/about.svg">
-                      </label>
-                    </div>
-
-
-                    <div class="form-check margin-t">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Additional Cess On Item<img src="images/icons/about.svg">
-                      </label>
-                    </div>
-
-
-
-                    <div class="form-check margin-t">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Reverse Charge<img src="images/icons/about.svg">
-                      </label>
+                      <span class="form-check-label" for="defaultCheck1">
+                        Enable HSN/SAC Code<i class="ri-information-fill"></i>
+                      </span>
                     </div>
 
 
                     <div class="form-check margin-t">
                       <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Enable Place of Supply<img src="images/icons/about.svg">
-                      </label>
+                      <span>
+                        Additional Cess On Item<i class="ri-information-fill">
+                        <div class="tooltipbx">
+                          <div class="tooltip-inner">
+                            <h4>
+                                Enable Additional Cess On Item
+                            </h4>
+                            <p>What is this?<br>Enable you to Additional<br> CessOn Item
+                            </p>
+                          </div>
+                        </div>
+                        </i>
+                      </span>
+                    </div>
+
+                    <div class="form-check margin-t">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <span class="form-check-label" for="defaultCheck1">
+                        Reverse Charge<i class="ri-information-fill"></i>
+                      </span>
                     </div>
 
 
                     <div class="form-check margin-t">
                       <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Composite Scheme<img src="images/icons/about.svg">
-                      </label>
+                      <span class="form-check-label" for="defaultCheck1">
+                        Enable Place of Supply<i class="ri-information-fill"></i>
+                      </span>
                     </div>
 
 
                     <div class="form-check margin-t">
                       <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Enable TCS<img src="images/icons/about.svg">
-                      </label>
+                      <span class="form-check-label" for="defaultCheck1">
+                        Composite Scheme<i class="ri-information-fill"></i>
+                      </span>
+                    </div>
+
+
+                    <div class="form-check margin-t">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <span class="form-check-label" for="defaultCheck1">
+                        Enable TCS<i class="ri-information-fill"></i>
+                      </span>
                     </div>
 
                      <div class="form-check margin-t">
@@ -447,6 +455,13 @@ $(document).ready(function(){
   });
 
 });
+
+
+// for tooltip
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 </script>
 
 <!-- for year in drop down plugin -->
