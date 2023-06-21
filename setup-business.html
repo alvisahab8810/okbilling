@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Setup Business</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content=""/>
+  <meta name="keywords" content="" />
+  <link rel="icon" type="image/png" sizes="32x32" href="">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+     
+      <div class="col-md-6 col-lg-6 col-xl-6  rightbx">
+        <form>
+            <div class="login-logo">
+                 <!-- <a href="#">
+                   <img src="images/logo/logo.png">
+                 </a> -->
+                <h1 class="sign-in">Set Up Your Organization Profile</h1>
+            </div>
+          <p class="wlcm">Organization Details</p>
+          <!-- Organization input -->
+          <div class="form-outline mb-2">
+            <label class="form-label" for="organaizationName">Organization Name<span class="mdry">*</span></label>
+            <input type="name" id="organaizationName" class="form-control form-control-lg"
+              placeholder="" />
+          </div>
+
+          <!-- Business Location Input -->
+
+           <div class="form-row">
+
+            <div class="form-group col-md-6">
+              <label for="inputBusiness">Business Location<span class="mdry">*</span></label>
+              <select id="inputBusiness" class="form-control">
+                <option selected>India</option>
+                <option>...</option>
+              </select>
+            </div>
+          <!-- State Union Input -->
+
+            <div class="form-group col-md-6">
+              <label for="inputState">State/Union Territory<span class="mdry">*</span></label>
+              <select id="inputState" class="form-control">
+                <option selected>Uttar Pradesh</option>
+                <option>...</option>
+              </select>
+            </div>
+            
+          </div>
+
+          <!-- Add organization address -->
+
+          <p>
+            <a class="add-text" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <i class="ri-add-circle-fill"></i> Add Organization Address
+              <span class="optional">(Optional)</span>
+
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                 <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Street 1">
+              </div>
+              <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Street 2">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control" id="inputCity" placeholder="City">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="inputZip">Zip</label>
+                  <input type="text" class="form-control" id="inputZip" placeholder="Zip/Postal Code">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Currency input -->
+         <div class="form-outline mt-2">
+            <label for="inputState">Currency<span class="mdry">*</span></label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose</option>
+              <option>USD</option>
+              <option>POUND</option>
+            </select>
+          </div>
+         
+          <!-- Time zone input -->
+           <div class="form-outline mt-3">
+              <label for="inputState">Time Zone:<span class="mdry">*</span></label>
+              <select id="inputState" class="form-control">
+                <option selected class="dropdown-item" href="#">(GMT + 5:30) India Standard Time (Asia/Kolkata)
+                </option>
+              </select>
+          </div>
+
+           <div class="registerbx">
+             <div class="reg-heading"><h4>Is this Business registered for GST ?</h4></div>
+             <div class="data-toggle">
+                   <div class="col-sm-5">
+                    <button type="button" class="btn btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                      <div class="handle" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample"></div>
+                    </button>
+                   </div>
+                </div>
+             </div>
+               <div class="collapse gstbx" id="collapseExample1">
+                  <div class="card card-body">
+                    <input type="text" placeholder="Enter Your GSTIN : XXXX XXXX XXX" id="GStName" class="form-control form-control-lg">
+                  </div>
+                </div>
+               <div class="text-center text-lg-start mt-4 pt-2">
+            <button type="button" class="submit-btn1"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;">Get Started</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+ 
+</section>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+
+
+  
+   <!--------------------- Images Zooming Plugin  ----------------->
+   <script>
+   $('.without-caption').magnificPopup({
+     type: 'image',
+     closeOnContentClick: true,
+     closeBtnInside: false,
+     mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+     image: {
+         verticalFit: true
+     },
+     zoom: {
+         enabled: true,
+         duration: 300 // don't foget to change the duration also in CSS
+     }
+     });
+
+     $('.with-caption').magnificPopup({
+     type: 'image',
+     closeOnContentClick: true,
+     closeBtnInside: false,
+     mainClass: 'mfp-with-zoom mfp-img-mobile',
+     image: {
+         verticalFit: true,
+         titleSrc: function(item) {
+           return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank"></a>';
+         }
+     },
+     zoom: {
+         enabled: true
+     }
+   });
+   </script>
+    <!--------------------- End Here Images Zooming Plugin  ----------------->
+    <!---------------------  Menu Set With Section Plugin  Plz Add This Class nav-link-custom in Your a Tag ----------------->
+  <script>
+         $('.nav-link-custom').on('click',function (e) {
+           // e.preventDefault();
+         
+           var target = this.hash,
+           $target = $(target);
+         
+          $('html, body').stop().animate({
+            'scrollTop': $target.offset().top-70
+           }, 500, 'swing', function () {
+            window.location.hash = target;
+           });
+         });
+         
+   </script>
+
+  
+   <script>
+     $(document).ready(function(){
+     $(".panel").click(function(){
+       $(".prfl-panel").toggle();
+     });
+   });
+   </script>
+
+   <!--------------------- End Here Menu Set With Section Plugin  Plz Add This Class nav-link-custom in Your a Tag ----------------->
+   <!-------------------For Close Your Navbar In Mobile On Click A Tag  ------------------------>
+ 
+   <!------------------- End Here For Close Your Navbar In Mobile On Click A Tag  ------------------------>
+
+  
+</body>
+</html>
