@@ -1134,6 +1134,371 @@ body {
   background:grey;
   bottom:-5px;
 }
-.ri-information-fill:hover.tooltip-inner{
+.tooltiplayer:hover .tooltip-inner{
   display:block!important;
+}
+
+.tooltip-inner1 {
+    max-width: 200px;
+    padding: 0.25rem 0.5rem;
+    color: #fff;
+    text-align: center;
+    background-color: #808080;
+    border-radius: 0.25rem;
+    padding: 17px;
+    position:absolute;
+    top: -103px;
+    left: 37px;
+    display:none;
+}
+.tooltip-inner1::before{
+  content:'';
+  position:absolute;
+  height:10px;
+  width:10px;
+  transform: rotate(45deg);
+  background:grey;
+  bottom:-5px;
+}
+.tooltiplayer1:hover .tooltip-inner1{
+  display:block!important;
+}   
+
+.tooltip-inner1 h4{
+      font-size: 17px;
+    text-align: left;
+}
+.tooltip-inner1 p{
+    text-align: left;
+    font-size: 14px;
+}
+
+
+.tooltip-inner2 {
+    max-width: 200px;
+    padding: 0.25rem 0.5rem;
+    color: #fff;
+    text-align: center;
+    background-color: #808080;
+    border-radius: 0.25rem;
+    padding: 17px;
+    position:absolute;
+    top: -122px;
+    left: 95px;
+    display:none;
+}
+.tooltip-inner2::before{
+  content:'';
+  position:absolute;
+  height:10px;
+  width:10px;
+  transform: rotate(45deg);
+  background:grey;
+  bottom:-5px;
+}
+.tooltiplayer2:hover .tooltip-inner2{
+  display:block!important;
+}   
+
+.tooltip-inner2 h4{
+      font-size: 17px;
+    text-align: left;
+}
+.tooltip-inner2 p{
+    text-align: left;
+    font-size: 14px;
+}
+
+.tooltip-inner3 {
+    max-width: 200px;
+    padding: 0.25rem 0.5rem;
+    color: #fff;
+    text-align: center;
+    background-color: #808080;
+    border-radius: 0.25rem;
+    padding: 17px;
+    position:absolute;
+    top: -122px;
+    left: 42px;
+    display:none;
+}
+.tooltip-inner3::before{
+  content:'';
+  position:absolute;
+  height:10px;
+  width:10px;
+  transform: rotate(45deg);
+  background:grey;
+  bottom:-5px;
+}
+.tooltiplayer3:hover .tooltip-inner3{
+  display:block!important;
+}   
+
+.tooltip-inner3 h4{
+      font-size: 17px;
+    text-align: left;
+}
+.tooltip-inner3 p{
+    text-align: left;
+    font-size: 14px;
+}
+
+.tooltip-inner4 {
+    max-width: 200px;
+    padding: 0.25rem 0.5rem;
+    color: #fff;
+    text-align: center;
+    background-color: #808080;
+    border-radius: 0.25rem;
+    padding: 17px;
+    position:absolute;
+    top: -144px;
+    left: 91px;
+    display:none;
+}
+.tooltip-inner4::before{
+  content:'';
+  position:absolute;
+  height:10px;
+  width:10px;
+  transform: rotate(45deg);
+  background:grey;
+  bottom:-5px;
+}
+.tooltiplayer4:hover .tooltip-inner4{
+  display:block!important;
+}   
+
+.tooltip-inner4 h4{
+      font-size: 17px;
+    text-align: left;
+}
+.tooltip-inner4 p{
+    text-align: left;
+    font-size: 14px;
+}
+
+
+.tooltip-inner5 {
+    max-width: 200px;
+    padding: 0.25rem 0.5rem;
+    color: #fff;
+    text-align: center;
+    background-color: #808080;
+    border-radius: 0.25rem;
+    padding: 17px;
+    position:absolute;
+    top: -144px;
+    left: 65px;
+    display:none;
+}
+.tooltip-inner5::before{
+  content:'';
+  position:absolute;
+  height:10px;
+  width:10px;
+  transform: rotate(45deg);
+  background:grey;
+  bottom:-5px;
+}
+.tooltiplayer5:hover .tooltip-inner5{
+  display:block!important;
+}   
+
+.tooltip-inner5 h4{
+      font-size: 17px;
+    text-align: left;
+}
+.tooltip-inner5 p{
+    text-align: left;
+    font-size: 14px;
+}
+
+.tooltip-inner6 {
+    max-width: 200px;
+    padding: 0.25rem 0.5rem;
+    color: #fff;
+    text-align: center;
+    background-color: #808080;
+    border-radius: 0.25rem;
+    padding: 17px;
+    position:absolute;
+    top: -102px;
+    left: 49px;
+    display:none;
+}
+.tooltip-inner6::before{
+  content:'';
+  position:absolute;
+  height:10px;
+  width:10px;
+  transform: rotate(45deg);
+  background:grey;
+  bottom:-5px;
+}
+.tooltiplayer6:hover .tooltip-inner6{
+  display:block!important;
+}   
+
+.tooltip-inner6 h4{
+      font-size: 17px;
+    text-align: left;
+}
+.tooltip-inner6 p{
+    text-align: left;
+    font-size: 14px;
+}
+
+/*Get taxpayer detail css code from here*/
+
+.title{
+        font-size: 16px;
+}
+.icon-title i{
+    height: 50px;
+    width: 50px;
+    background: #f5f5f5;
+    color: #8d0a6b;
+    font-size: 29px;
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 5px;
+}
+.m-heading{
+
+padding-left: 11px;
+}
+.m-heading h4{
+    font-size: 20px;
+    color: #000000bd;
+}
+.modal-dialog {
+    max-width: 70%;
+}
+.modal-body {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 2rem;
+}
+
+.modal-footer {
+   
+display: flex;
+   
+justify-content: flex-start;
+   
+padding: 2rem;
+   
+padding-bottom: 1rem;
+   
+border-top: 1px solid #e9ecef;
+}
+.tax-data {
+    padding-left: 50px;
+}
+.tax-title ul li{
+    margin: 10px 0px;
+}
+
+.tax-data ul li{
+    margin: 10px 0px;
+}
+.viewbx {
+    padding-left: 2rem;
+}
+a.return {
+    display: flex;
+    align-items: center;
+    background: #8d0a6b;
+    width: fit-content;
+    padding: 6px 10px;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.table .thead-dark th {
+    color: #4b4a4a;
+    border-color: #91979c;
+    background: #f5f5f5;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #dee2e6;
+}
+.spac-bottom{margin-top: 20px;padding: 0;margin-bottom: 20px;}
+.return i{
+    font-size: 16px;
+}
+.tax-list{
+   display: flex;
+   align-items: center;
+}
+.tax-list i{font-size: 19px!important;}
+.gst-heading {
+    font-size: 15px;
+    font-weight: bold;
+}
+#tax-list .modal-dialog{
+    max-width: 23%!important;
+}
+.gst-heading{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    cursor: pointer;
+    color: #393838;
+}
+
+.gst-heading i{
+    font-size: 23px;
+    margin-left: 7px;
+}
+
+#tax-list .modal-title{
+    font-size: 16px;
+    font-weight: bold
+}
+.save{
+    padding: 7px 19px;
+    background: #611787;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+.tr-right ul{
+    display: flex;
+}
+.tr-right ul li{
+    margin: 0px 7px;
+}
+.crud {
+    padding-top: 6px;
+    border-bottom: 1px solid #ddd;
+}
+.list{
+    display: flex;
+    padding-top: 5px;
+}
+.list li{
+    margin: 0px 10px;
+    font-size: 13px;
+    color: #1e1ed899;
+}
+.tr-right i{
+    color: grey;
+}
+.select-taxes{
+    font-size: 13px;
+    font-weight: bold;
+}
+.select-tax-bx{
+    font-size: 13px;
 }

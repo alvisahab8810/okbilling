@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>GST-Setting</title>
+  <title>Tax List</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content=""/>
@@ -13,10 +13,10 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body id="tax-list">
   <!---------------- Menu Section Codes Start From Here --------------->
  
-<div class="container-scroller">
+<div class="container-scroller" >
       <!-- partial:partials/_sidebar.html -->
     <div class="container-fluid custom-navbar">
       <div class="row">
@@ -259,31 +259,11 @@
       <!-- tax & gst section codes start here -->
 
       <section class="py-5 header personal-section2 col-sm-8">
-      <div class="edit-header">
-        <div>
-            <h2>Taxes & GST</h2>
-        </div>
-        <!-- <div>
-           <ul class="btn-bx">
-              <button class="edit-btn">Edit</button>
-            </ul>
-        </div> -->
-      </div>
      <div class="container py-4">
         <div class="row">
-            <div class="col-md-4 border1">
-                <!-- Tabs nav -->
-                <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link mb-3 p-2 shadow " id="v-pills-home-tab"  href="gst-setting.html">
-                        <i class="fa fa-user-circle-o mr-2"></i>
-                        <span class="font-weight-bold small">GST Settings</span></a>
-
-                    <a class="nav-link mb-3 p-2 shadow active" id="v-pills-profile-tab"  href="tax-rates.html">
-                        <i class="fa fa-calendar-minus-o mr-2"></i>
-                        <span class="font-weight-bold small">Tax Rates</span></a>
-                  </div>
-            </div>
-            <div class="col-md-8">
+          
+            <div class="col-md-4">
+                <h2 class="gst-heading">GST Setting</h2>
                 <form>
                     <div class="form-check margin-t">
                       <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -406,11 +386,266 @@
                       </span>
                     </div>
                 </form>
-                <div class="margin-t">
-
-                   <a href="#" class="return tax-list">Tax List <i class="ri-arrow-right-s-line"></i></a>
-                </div>
             </div>
+
+            
+
+ <!-- Tax rates section start from here -->
+            <div class="col-sm-4">
+                <h2 class="gst-heading" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">TAX Rates <i class="ri-add-circle-fill"></i>
+                </h2>
+
+                <!-- Crud section start here -->
+
+
+                <!-- 1st -->
+                <div class="d-flex justify-content-between crud">
+                    <div class="tr-left">
+                        <p>IGST<span class="data-value">@0%</span></p>
+                    </div>
+                    <div class="tr-right">
+                        <ul>
+                            <li>
+                                <span class="value">0</span>
+                            </li>
+                            <li>
+                                <span class="value"><i class="ri-edit-2-fill"></i></span>
+                            </li>
+                            <li>
+                                <span class="value"><i class="ri-delete-bin-6-fill"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 2nd -->
+                  <div class="d-flex justify-content-between crud">
+                    <div class="tr-left">
+                        <p>IGST<span class="data-value">@0%</span></p>
+                    </div>
+                    <div class="tr-right">
+                        <ul>
+                            <li>
+                                <span class="value">0</span>
+                            </li>
+                            <li>
+                                <span class="value"><i class="ri-edit-2-fill"></i></span>
+                            </li>
+                            <li>
+                                <span class="value"><i class="ri-delete-bin-6-fill"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 3rd -->
+
+                  <div class="d-flex justify-content-between crud">
+                    <div class="tr-left">
+                        <p>IGST<span class="data-value">@0%</span></p>
+                    </div>
+                    <div class="tr-right">
+                        <ul>
+                            <li>
+                                <span class="value">0</span>
+                            </li>
+                            <li>
+                                <span class="value"><i class="ri-edit-2-fill"></i></span>
+                            </li>
+                            <li>
+                                <span class="value"><i class="ri-delete-bin-6-fill"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 4th -->
+
+                  <div class="d-flex justify-content-between crud">
+                    <div class="tr-left">
+                        <p>IGST<span class="data-value">@0%</span></p>
+                    </div>
+                    <div class="tr-right">
+                        <ul>
+                            <li>
+                                <span class="value">0</span>
+                            </li>
+                            <li>
+                                <span class="value"><i class="ri-edit-2-fill"></i></span>
+                            </li>
+                            <li>
+                                <span class="value"><i class="ri-delete-bin-6-fill"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 5th -->
+
+                  <div class="d-flex justify-content-between crud">
+                    <div class="tr-left">
+                        <p>IGST<span class="data-value">@0%</span></p>
+                    </div>
+                    <div class="tr-right">
+                        <ul>
+                            <li>
+                                <span class="value">0</span>
+                            </li>
+                            <li>
+                                <span class="value"><i class="ri-edit-2-fill"></i></span>
+                            </li>
+                            <li>
+                                <span class="value"><i class="ri-delete-bin-6-fill"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 6th -->
+
+                  <div class="d-flex justify-content-between crud">
+                    <div class="tr-left">
+                        <p>IGST<span class="data-value">@0%</span></p>
+                    </div>
+                    <div class="tr-right">
+                        <ul>
+                            <li>
+                                <span class="value">0</span>
+                            </li>
+                            <li>
+                                <span class="value"><i class="ri-edit-2-fill"></i></span>
+                            </li>
+                            <li>
+                                <span class="value"><i class="ri-delete-bin-6-fill"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 7th -->
+
+                  <div class="d-flex justify-content-between crud">
+                    <div class="tr-left">
+                      <p>IGST<span class="data-value">@0%</span></p>
+                    </div>
+                    <div class="tr-right">
+                        <ul>
+                            <li>
+                                <span class="value">0</span>
+                            </li>
+                            <li>
+                                <span class="edit-button"><i class="ri-edit-2-fill"></i></span>
+                            </li>
+                            <li>
+                                <span class="delete-button"><i class="ri-delete-bin-6-fill"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <!-- Crud section end here -->
+
+           </div>
+<!-- Tax rates sectio end from here -->
+
+
+            <div class="col-sm-4">
+                <h2 class="gst-heading" data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo">TAX Group <i class="ri-add-circle-fill"></i>
+                </h2>
+
+            <!-- 1st -->
+
+               <div class="d-flex justify-content-between crud">
+                <div class="tr-left">
+                  <p>IGST<span class="data-value">@0%</span></p>
+                  <ul class="list">
+                      <li>SGST@0%</li>
+                      <li>CGST@0%</li>
+                  </ul>
+                </div>
+                <div class="tr-right">
+                    <ul>
+                        <li>
+                            <span class="edit-button"><i class="ri-edit-2-fill"></i></span>
+                        </li>
+                        <li>
+                            <span class="delete-button"><i class="ri-delete-bin-6-fill"></i></span>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+
+              <!-- 2nd -->
+
+              <div class="d-flex justify-content-between crud">
+                <div class="tr-left">
+                  <p>IGST<span class="data-value">@0%</span></p>
+                  <ul class="list">
+                      <li>SGST@0%</li>
+                      <li>CGST@0%</li>
+                  </ul>
+                </div>
+                <div class="tr-right">
+                    <ul>
+                        <li>
+                            <span class="edit-button"><i class="ri-edit-2-fill"></i></span>
+                        </li>
+                        <li>
+                            <span class="delete-button"><i class="ri-delete-bin-6-fill"></i></span>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+
+            <!-- 3rd -->
+
+              <div class="d-flex justify-content-between crud">
+                <div class="tr-left">
+                  <p>IGST<span class="data-value">@0%</span></p>
+                  <ul class="list">
+                      <li>SGST@0%</li>
+                      <li>CGST@0%</li>
+                  </ul>
+                </div>
+                <div class="tr-right">
+                    <ul>
+                        <li>
+                            <span class="edit-button"><i class="ri-edit-2-fill"></i></span>
+                        </li>
+                        <li>
+                            <span class="delete-button"><i class="ri-delete-bin-6-fill"></i></span>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+
+              <!-- 4th -->
+                <div class="d-flex justify-content-between crud">
+                <div class="tr-left">
+                  <p>IGST<span class="data-value">@0%</span></p>
+                  <ul class="list">
+                      <li>SGST@0%</li>
+                      <li>CGST@0%</li>
+                  </ul>
+                </div>
+                <div class="tr-right">
+                    <ul>
+                        <li>
+                            <span class="edit-button"><i class="ri-edit-2-fill"></i></span>
+                        </li>
+                        <li>
+                            <span class="delete-button"><i class="ri-delete-bin-6-fill"></i></span>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+
+
+            </div>
+            </div>
+
         </div>
       </div>
  </section>
@@ -451,6 +686,123 @@
     </ul> -->
 <!--   </footer>
 </div> -->
+
+
+  <!-- Modal  -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Tax Rates</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" id="recipient-name" placeholder="Tax Name">
+          </div>
+         <div class="form-row">
+
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" id="recipient-name" placeholder="Rate">
+            </div>
+          <!-- State Union Input -->
+
+            <div class="form-group col-md-6">
+              <select id="inputOtherssa" class="form-control">
+                <option selected>Others</option>
+                <option>...</option>
+              </select>
+            </div>
+
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="save">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal 2 -->
+
+
+ <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Tax Group</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" id="recipient-name" placeholder="Enter Group Name">
+          </div>
+        </form>
+        <h5 class="select-taxes">Select Taxes</h5>
+        <!-- 1st -->
+        <div class="d-flex justify-content-between crud">
+            <div class="select-tax-bx">
+                <span>IGST@0%</span>
+            </div>
+            <div>
+                <span>0% <input type="checkbox" name="choose"></span>
+            </div>
+        </div>
+
+        <!-- 2nd -->
+
+         <div class="d-flex justify-content-between crud">
+            <div class="select-tax-bx">
+                <span>IGST@0%</span>
+            </div>
+            <div>
+                <span>0% <input type="checkbox" name="choose"></span>
+            </div>
+        </div>
+
+        <!-- 3rd -->
+
+         <div class="d-flex justify-content-between crud">
+            <div class="select-tax-bx">
+                <span>IGST@0%</span>
+            </div>
+            <div>
+                <span>0% <input type="checkbox" name="choose"></span>
+            </div>
+        </div>
+
+        <!-- 4th -->
+
+         <div class="d-flex justify-content-between crud">
+            <div class="select-tax-bx">
+                <span>IGST@0%</span>
+            </div>
+            <div>
+                <span>0% <input type="checkbox" name="choose"></span>
+            </div>
+        </div>
+      
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="save">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <!---------------- Footer Section Codes End From Here ---------------->
 
   
