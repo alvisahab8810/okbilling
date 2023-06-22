@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Account</title>
+  <title>Add Bank Account</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content=""/>
@@ -256,67 +256,53 @@
           </div>
       </div>
 
-      <!-- account section codes start here -->
-      <div class="container">
-         <div class="bx3">
-               <div class="prfl-bx1">
-               <a href="profile.html">
-               <h2>Profile</h2>
-               <i class="ri-user-3-fill"></i>
-               <!-- <p>Create Lorem Ipsum</p> -->
-               </a>
-             </div>
+      <!-- tax & gst section codes start here -->
 
-             <div class="prfl-bx1">
-               <a href="tax&gst.html">
-                 <h2>Office</h2>
-                 <i class="ri-building-2-fill"></i>
-                 <!-- <p>List Lorem Ipsum</p> -->
-               </a>
-
-             </div>
-             <div class="prfl-bx1">
-                <a href="tax&gst.html">
-                  <h2>Taxes & GST</h2>
-                  <i class="fa-solid fa-indian-rupee-sign"></i>
-                  <!-- <p>Edit Lorem Ipsum</p> -->
-                </a>
-
-             </div>
-
-              <div class="prfl-bx1">
-                <a href="add-bank-account.html">
-                  <h2>Add Bank Account</h2>
-                  <i class="ri-bank-fill"></i>
-                  <!-- <p>Lorem Ipsum</p> -->
-                </a>
-             </div>
-           
-         </div>
-
-          <div class="bx3">
-            
-
-            <!--  <div class="prfl-bx1">
-               <a href="#">
-                 <h2>Lorem Ipsum</h2>
-                 <i class="ri-price-tag-3-fill"></i>
-                 <p>Edit Lorem Ipsum</p>
-               </a>
-
-             </div>
-
-             <div class="prfl-bx1">
-                <a href="#">
-                   <h2>Lorem Ipsum</h2>
-                   <i class="ri-brush-fill"></i>
-                   <p>Lorem Ipsum</p>
-                </a>
-             </div> -->
-           
-         </div>
+    <section class="py-5 header personal-section2 col-sm-8">
+      <div class="edit-header">
+        <div>
+            <h2>Add Bank Account</h2>
+        </div>
       </div>
-       <!-- account section codes end here -->
+
+      <!-- Automatic Add Bank section start from here -->
+
+      <div class="add-bank">
+          <div class="add-headingbx">
+              <h2>Automatic Bank Feeds Supported Banks</h2>
+              <p>Connect.your bank accounts and fetch the bank feeds using one of our third-party bank<br> feeds service providers.</p>
+          </div>
+
+          <div class="connect-bx">
+            <button class="connect-btn">
+                Connect Now
+            </button>
+          </div>
+      </div>
+
+      <!-- Automatic Add Bank section end from here -->
+
+
+      <!-- Manually Add Bank section start from here -->
+
+      <div class="add-bank">
+          <div class="add-headingbx">
+              <h2> <i class="ri-add-circle-fill"></i> Add bank accounts manually</h2>
+              <p>Unable to connect your bank account through our service providers? Add you bank accounts manually <br>by entering your account details.</p>
+          </div>
+
+          <div class="connect-bx">
+            <a href="add-manually.html" class="connect-btn">
+                Add Manually
+            </a>
+          </div>
+      </div>
+
+      <!-- Manually Add Bank section end from here -->
+ </section>
+
+ 
+       <!-- tax & gst section codes end here -->
     </div>
     <!-- Main Col END -->
   </div><!-- body-row END -->
@@ -413,6 +399,13 @@ $(document).ready(function(){
   });
 
 });
+
+
+// for tooltip
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 </script>
 
 <!-- for year in drop down plugin -->

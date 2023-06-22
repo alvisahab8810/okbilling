@@ -1502,3 +1502,112 @@ a.return {
 .select-tax-bx{
     font-size: 13px;
 }
+
+
+
+/*add bank account css start from here*/
+
+.add-bank {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 5px;
+    margin-top: 18px;
+    padding: 10px;
+}
+
+.add-headingbx h2 {
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #4e4a4a;
+}
+
+.add-headingbx p {
+    font-size: 14px;
+    color: #555252;
+}
+.connect-btn {
+    padding: 7px 11px;
+    border: none;
+    border-radius: 5px;
+    background: #611787;
+    color: white;
+}
+.add-headingbx h2 i{
+    color: #611787;
+    font-size: 23px;
+    margin-right: 4px;
+}
+
+.tab-left{
+    padding-top: 20px;
+}
+ul.tab-left li {
+    margin: 27px 0px;
+}
+
+
+
+/*bank tab css start here*/
+
+
+
+
+/* nav */
+.card {
+  border: none;
+  border-radius: 0.5rem;
+}
+
+a.active {
+  border-bottom: 2px solid #b21bb3;
+}
+
+.nav-link {
+  color: rgb(110, 110, 110);
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #55c57a;
+}
+
+.nav-pills .nav-link.active {
+  color: black;
+  background-color: white;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-weight: 600;
+}
+
+.tab-content {
+  padding-bottom: 1.3rem;
+}
+
+.form-control {
+  background-color: rgb(241, 243, 247);
+  border: none;
+}
+
+
+.form-control:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 7px rgba(0, 0, 0, 0.2);
+}
+
+
+.radio input{
+    margin-right: 5px;
+}
+
+.margin-t{
+    margin-top: 13px;
+}
+.footer-btn{
+     display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+    margin-top: 5px;
+    border-top: 1px solid #e9ecef;
+    padding-top: 13px;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Account</title>
+  <title>Add Credit Card Manually</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content=""/>
@@ -256,67 +256,77 @@
           </div>
       </div>
 
-      <!-- account section codes start here -->
-      <div class="container">
-         <div class="bx3">
-               <div class="prfl-bx1">
-               <a href="profile.html">
-               <h2>Profile</h2>
-               <i class="ri-user-3-fill"></i>
-               <!-- <p>Create Lorem Ipsum</p> -->
-               </a>
-             </div>
+      <!-- tax & gst section codes start here -->
 
-             <div class="prfl-bx1">
-               <a href="tax&gst.html">
-                 <h2>Office</h2>
-                 <i class="ri-building-2-fill"></i>
-                 <!-- <p>List Lorem Ipsum</p> -->
-               </a>
-
-             </div>
-             <div class="prfl-bx1">
-                <a href="tax&gst.html">
-                  <h2>Taxes & GST</h2>
-                  <i class="fa-solid fa-indian-rupee-sign"></i>
-                  <!-- <p>Edit Lorem Ipsum</p> -->
-                </a>
-
-             </div>
-
-              <div class="prfl-bx1">
-                <a href="add-bank-account.html">
-                  <h2>Add Bank Account</h2>
-                  <i class="ri-bank-fill"></i>
-                  <!-- <p>Lorem Ipsum</p> -->
-                </a>
-             </div>
-           
-         </div>
-
-          <div class="bx3">
-            
-
-            <!--  <div class="prfl-bx1">
-               <a href="#">
-                 <h2>Lorem Ipsum</h2>
-                 <i class="ri-price-tag-3-fill"></i>
-                 <p>Edit Lorem Ipsum</p>
-               </a>
-
-             </div>
-
-             <div class="prfl-bx1">
-                <a href="#">
-                   <h2>Lorem Ipsum</h2>
-                   <i class="ri-brush-fill"></i>
-                   <p>Lorem Ipsum</p>
-                </a>
-             </div> -->
-           
-         </div>
+    <section class="py-5 header personal-section2 col-sm-8">
+      <div class="edit-header">
+        <div>
+            <h2>Credit Card</h2>
+        </div>
       </div>
-       <!-- account section codes end here -->
+
+      <div class="row">
+          <div class="col-sm-3">
+              <ul class="tab-left">
+                  <li>Select Account Type<span class="mdry">*</span></li>
+                  <li>Account Name<span class="mdry">*</span></li>
+                  <li>Account Code</li>
+                  <li>Currency<span class="mdry">*</span></li>
+                  <li>Bank Name</li>
+                  <li>Description</li>
+              </ul>
+          </div>
+          <div class="col-sm-9">
+               <div class="container card shadow d-flex justify-content-center mt-4">
+      <!-- nav options -->
+      <ul class="nav nav-pills mb-2 shadow-sm" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link radio "href="add-manually.html"> <input type="radio"> Bank</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link radio active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><input type="radio"> Credit Card</a>
+        </li>
+      
+      </ul>
+
+      <!-- content -->
+      <div class="tab-content" id="pills-tabContent p-3">
+        <!-- 1st card -->
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <form class="search">
+            <input class="form-control margin-t" type="name" placeholder="" aria-label="Name..." />
+            <input class="form-control margin-t" type="code" placeholder="" aria-label="Code..." />
+             <select class="form-select form-control margin-t">
+                 <option value="inr">INR</option>
+                 <option value="usd">USD</option>
+             </select>
+            <input class="form-control margin-t" type="name" placeholder="" aria-label="Name..." />
+
+            <textarea class="form-control margin-t" placeholder="Max. 500 characters"></textarea>
+
+
+          </form>
+
+         <div class="modal-footer footer-btn">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="save">Save</button>
+         </div>
+        
+        </div>
+       
+      </div>
+    </div>
+  </div>
+ </div>
+
+
+
+
+      <!-- Manually Add Bank section end from here -->
+ </section>
+
+ 
+       <!-- tax & gst section codes end here -->
     </div>
     <!-- Main Col END -->
   </div><!-- body-row END -->
@@ -413,6 +423,13 @@ $(document).ready(function(){
   });
 
 });
+
+
+// for tooltip
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 </script>
 
 <!-- for year in drop down plugin -->
