@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Active Items</title>
+  <title>All Items</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content=""/>
@@ -283,19 +283,18 @@
        <section class="py-5 header personal-section2 col-sm-8">
       <div class="edit-header">
         <div>
-            <h2>Active Items</h2>
+            <h2>Items List</h2>
         </div>
       </div>
 
       <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-12">
               <div class="active-bx">
                   <div class="active-items">
                       <select selected> 
-                        <option>Active Items</option>
-                        <option>All Items</option>
-                        <option>New Items</option>
                         <option>Item List</option>
+                        <option>Active Items</option>
+                        <option>New Items</option>
                       </select>
                   </div>
                   <div class="d-flex">
@@ -303,159 +302,36 @@
                       <a href="#" class="add-new"><i class="ri-more-fill"></i></a>
                   </div>
               </div>
+            <!-- table start here -->
+              <table class="table table-striped  tablebx">
+                  <thead>
+                    <tr>
+                      <th scope="col"><input type="checkbox" class="name-check">Name</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Rate</th>
+                      <th scope="col">Usage Unit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                      <td> <input type="checkbox"> CDE</td>
+                      <td></td>
+                      <td>400.00</td>
+                      <td>cm</td>
+                    </tr>
 
-              <div class="item-listbx">
-                  <ul class="child-list">
-                      <li><input type="checkbox">erty</li>
-                      <li><input type="checkbox">CDE</li>
-                  </ul>
-              </div>
+                    <tr>
+                      <td>  <input type="checkbox"> erty</td>
+                      <td></td>
+                      <td>@1,234.00</td>
+                      <td>box</td>
+                    </tr>
+                  
+                  </tbody>
+               </table>
+
+               <!-- table end from here -->
           </div>
-          <div class="col-sm-8"  id="exTab1">
-            <!-- Tab nav -->
-            <div class="tab-navbax">
-                <div class="tab-name">
-                    <h5>erty</h5>
-                </div>
-                <div class="more">
-                    <a href="#" class="edit-pen"><i class="ri-edit-2-fill"></i></a>
-                    <a href="#" class="edit-more">More <i class="ri-arrow-down-s-fill"></i></a>
-                    <a href="#" class="close-icon">X</a>
-
-                </div>
-            </div>
-
-            <div id="exTab1" class="container"> 
-           <ul  class="nav nav-pills">
-            <li class="active">
-             <a  href="#1a" data-toggle="tab" class="active">Overview</a>
-            </li>
-            <li><a href="#2a" data-toggle="tab">Transactions</a>
-            </li>
-            <li><a href="#3a" data-toggle="tab">History</a>
-            </li>
-      
-           </ul>
-            <div class="tab-content clearfix">
-              <div class="tab-pane active" id="1a">
-                <!-- 1st -->
-                   <div class="overviewbx">
-                     <div>
-                         <ul class="item-list ">
-                             <li>Item Type</li>
-                             <li>Unit</li>
-                             <li>Created Source</li>
-                         </ul>
-                     </div>
-                     <div class="sub-item-bx">
-                         <ul class="sub-item-list">
-                             <li>Sales and Purchase Items</li>
-                             <li>Box</li>
-                             <li>User</li>
-                         </ul>
-                     </div>
-                 </div>
-
-                 <!-- 2nd -->
-
-                 <h4 class="h4">Purchase Information</h4>
-                   <div class="overviewbx">
-                     <div>
-                         <ul class="item-list ">
-                             <li>Cost Price</li>
-                             <li>Purchase</li>
-                             <li>Account</li>
-                         </ul>
-                     </div>
-                     <div class="sub-item-bx">
-                         <ul class="sub-item-list">
-                             <li>432.00</li>
-                             <li>Cost of Goods Sold</li>
-                             <li></li>
-                         </ul>
-                     </div>
-                 </div>
-
-                 <!-- 3rd -->
-
-                   <h4 class="h4">Sales Information</h4>
-                   <div class="overviewbx">
-                     <div>
-                         <ul class="item-list ">
-                             <li>Selling Price</li>
-                             <li>Sales Account</li>
-                         </ul>
-                     </div>
-                     <div class="sub-item-bx">
-                         <ul class="sub-item-list">
-                             <li>1,234.00</li>
-                             <li>Sales</li>
-                             <li></li>
-                         </ul>
-                     </div>
-                 </div>
-
-               </div>
-              <div class="tab-pane" id="2a">
-                 <div class="filterbx">
-
-                    <!-- first fileter -->
-                    <div class="dropdown">
-                      <button class="filter-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Filter By:
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">All</a>
-                        <a class="dropdown-item" href="#">Draft</a>
-                        <a class="dropdown-item" href="#">Sent</a>
-                        <a class="dropdown-item" href="#">Client Viewed</a>
-                        <a class="dropdown-item" href="#">Accepted</a>
-                        <a class="dropdown-item" href="#">Invoiced</a>
-                        <a class="dropdown-item" href="#">Declined</a>
-                        <a class="dropdown-item" href="#">Expired</a>
-                      </div>
-                    </div>
-
-
-                    <!-- 2nd filter -->
-
-                      <div class="dropdown ml-3">
-                      <button class="filter-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Status:
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <a class="dropdown-item" href="#">All</a>
-                        <a class="dropdown-item" href="#">Draft</a>
-                        <a class="dropdown-item" href="#">Client Viewed</a>
-                        <a class="dropdown-item" href="#">Accepted</a>
-                        <a class="dropdown-item" href="#">Invoiced</a>
-                        <a class="dropdown-item" href="#">Declined</a>
-                        <a class="dropdown-item" href="#">Expired</a>
-                      </div>
-                    </div>
-                 </div>
-                 <p class="output-para">There are no quotes</p>
-              </div>
-            <div class="tab-pane" id="3a">
-           <div class="overviewbx">
-             <div>
-                 <ul class="item-list ">
-                     <li>DATE</li>
-                     <li>22/06/2023 04:34 PM</li>
-                 </ul>
-             </div>
-             <div class="sub-item-bx">
-                 <ul class="sub-item-list">
-                     <li>Details</li>
-                     <li><b>Created By</b>-Ivan Sinha</li>
-                     <li></li>
-                 </ul>
-             </div>
-         </div>
-            </div>
-            </div>
-          </div>
-        </div>
       </div>
       </section>
       <!-- Items section end from here -->
