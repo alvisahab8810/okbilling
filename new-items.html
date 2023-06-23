@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Add Bank Account</title>
+  <title>New Items</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content=""/>
@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <!---------------- Menu Section Codes Start From Here --------------->
@@ -109,6 +108,30 @@
                 </a>
                 <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Password</span>
+                </a>
+            </div>
+
+
+            <a href="#submenu3" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="ri-profile-fill mr-3"></span>
+                    <span class="menu-collapsed ">Items</span>
+                    <span class="ml-auto ri-arrow-down-s-line"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id='submenu3' class="collapse sidebar-submenu">
+                <a href="new-items.html " class="list-group-item list-group-item-action bg-dark text-white active">
+                    <span class="menu-collapsed">New Items</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Item List</span>
+                </a>
+                <a href="active-items.html" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Active Items</span>
+                </a>
+                 <a href="all-items.html" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">All Items</span>
                 </a>
             </div>
             <a href="#" class="bg-dark list-group-item list-group-item-action">
@@ -256,53 +279,141 @@
           </div>
       </div>
 
-      <!-- Add bank account section codes start here -->
+      <!-- Items section start from here -->
 
-    <section class="py-5 header personal-section2 col-sm-8">
+
+       <section class="py-5 header personal-section2 col-sm-8">
       <div class="edit-header">
         <div>
-            <h2>Add Bank Account</h2>
+            <h2>New Item</h2>
         </div>
       </div>
 
-      <!-- Automatic Add Bank section start from here -->
+         <div class="row"> <div class="col-sm-3"> <ul class="item-types"> 
+            <li class="type">Type <span  class="tooltiplayer7"><i
+             class="ri-information-fill"></i> <div class="tooltipbx7"> <div
+              class="tooltip-inner7"> <p> The item will be measured<br> in terms of this unit:<br> i.e - Kg, ML, cm, etc </p>  </div> </div> </span></li>
+              <li>Name<span class="mdry">*</span></li> 
+              <li class="type">Unit <span  class="tooltiplayer8"><i
+              class="ri-information-fill"></i> <div class="tooltipbx8"> <div
+              class="tooltip-inner8"> <p> The item will be measured  <br> in terms of this unit:<br> i.e - Kg, ML, cm, etc </p>  </div> </div> </span></li> 
+          </ul> 
+        </div>
 
-      <div class="add-bank">
-          <div class="add-headingbx">
-              <h2>Automatic Bank Feeds Supported Banks</h2>
-              <p>Connect.your bank accounts and fetch the bank feeds using one of our third-party bank<br> feeds service providers.</p>
-          </div>
+          <div class="col-sm-9">
+              <form>
+                <div class="d-flex pt-3 mb-2">
+                    <button type="button" class="btn btn-toggle1" data-toggle="button" aria-pressed="false" autocomplete="Goods">
+                      <div class="handle" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample"></div>
+                    </button>
+                   <!--  <input type="radio" name="Goods"><span class="radio-opt">Goods</span>
+                    <input type="radio" name="Service" class="ml-4"><span class="radio-opt">Service</span> -->
+                 </div>
 
-          <div class="connect-bx">
-            <button class="connect-btn">
-                Connect Now
-            </button>
+                <div class="form-outline mb-2">
+                    <input type="name" id="name" class="form-control form-control-lg"
+                      placeholder="erty" />
+                </div>
+
+                <div class="form-group">
+                  <select id="selectType" class="form-control">
+                    <option selected>Select or type to add</option>
+                    <option>cm</option>
+                    <option>Dz</option>
+                    <option>ft</option>
+                    <option>g</option>
+                    <option>kg</option>
+                    <option>km</option>
+                    <option>lb</option>
+                    <option>mg</option>
+                    <option>mL</option>
+                  </select>
+                </div>
+             </form>
           </div>
       </div>
 
-      <!-- Automatic Add Bank section end from here -->
 
+      <div class="row">
+        <div class="col-sm-6">
+          <form>
+            <input type="checkbox"/><span class="inform"><b>Sales Information</b></span>
+            <div class="form-outline mb-2 m-heading">
+            </div>
 
-      <!-- Manually Add Bank section start from here -->
+           <div class="input-group mb-3">
+              <label for="inputSelling" class="label-h">Selling Price<span class="mdry">*</span></label>
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">INR</span>
+              </div>
 
-      <div class="add-bank">
-          <div class="add-headingbx">
-              <h2> <i class="ri-add-circle-fill"></i> Add bank accounts manually</h2>
-              <p>Unable to connect your bank account through our service providers? Add you bank accounts manually <br>by entering your account details.</p>
-          </div>
+              <input type="text" class="form-control" placeholder="" aria-label="INR" aria-describedby="basic-addon1">
+            </div>
 
-          <div class="connect-bx">
-            <a href="add-manually.html" class="connect-btn">
-                Add Manually
-            </a>
-          </div>
+            <div class="form-group">
+              <label for="inputAccount" class="label-h">Account<span class="mdry">*</span></label>
+              <select id="selectType" class="form-control">
+                <option selected>Sales</option>
+                <option>..</option>
+                <option>..</option>
+                <option>..</option>
+                <option>..</option>
+                <option>..</option>
+              </select>
+            </div>
+
+             <div class="form-group">
+              <label for="description" class="label-h">Description<span class="mdry">*</span></label>
+              <textarea class="form-control"></textarea>
+            </div>
+         </form>
+        </div>
+        <div class="col-sm-6">
+            <form>
+            <div class="form-outline mb-2 m-heading">
+                <input type="checkbox"/><span class="inform"><b>Purchase Information</b></span>
+            </div>
+            <div class="input-group mb-3">
+            <label for="inputCost" class="label-h">Cost Price<span class="mdry">*</span></label>
+
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">INR</span>
+              </div>
+              <input type="text" class="form-control" placeholder="" aria-label="INR" aria-describedby="basic-addon1">
+            </div>
+            <div class="form-group">
+              <label for="inputAccount" class="label-h">Account<span class="mdry">*</span></label>
+              <select id="selectType" class="form-control">
+
+                <option selected>Cost of Goods Sold</option>
+                <option>..</option>
+                <option>..</option>
+                <option>..</option>
+                <option>..</option>
+                <option>..</option>
+              
+              </select>
+            </div>
+
+             <div class="form-group">
+              <label for="description" class="label-h">Description<span class="mdry">*</span></label>
+              <textarea class="form-control"></textarea>
+            </div>
+         </form>
+   
+        </div>
       </div>
 
-      <!-- Manually Add Bank section end from here -->
- </section>
+      <p class="footer-para"> Do you want to keep track of this item? <b>Enable Inventory</b> to view this stock based on the sales and purchase transactions you record for it. Go to <b><i>Setting > Preferences > Items and enable inventory.</p>
+      
+       <div class="modal-footer">
+        <button type="button" class="save">Save</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+      </div>
 
- 
-       <!-- tax & gst section codes end here -->
+      </section>
+      <!-- Items section end from here -->
+
     </div>
     <!-- Main Col END -->
   </div><!-- body-row END -->
@@ -399,13 +510,6 @@ $(document).ready(function(){
   });
 
 });
-
-
-// for tooltip
-
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
 </script>
 
 <!-- for year in drop down plugin -->

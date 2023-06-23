@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Add Bank Account</title>
+  <title>All Items</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content=""/>
@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <!---------------- Menu Section Codes Start From Here --------------->
@@ -109,6 +108,31 @@
                 </a>
                 <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Password</span>
+                </a>
+            </div>
+
+
+            <a href="#submenu3" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="ri-profile-fill mr-3"></span>
+                    <span class="menu-collapsed ">Items</span>
+                    <span class="ml-auto ri-arrow-down-s-line"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id='submenu3' class="collapse sidebar-submenu">
+                <a href="new-items.html " class="list-group-item list-group-item-action bg-dark text-white active">
+                    <span class="menu-collapsed">New Items</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Item List</span>
+                </a>
+                <a href="active-items.html" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Active Items</span>
+                </a>
+
+                 <a href="all-items.html" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">All Items</span>
                 </a>
             </div>
             <a href="#" class="bg-dark list-group-item list-group-item-action">
@@ -256,53 +280,65 @@
           </div>
       </div>
 
-      <!-- Add bank account section codes start here -->
+      <!-- Items section start from here -->
 
-    <section class="py-5 header personal-section2 col-sm-8">
+
+       <section class="py-5 header personal-section2 col-sm-8">
       <div class="edit-header">
         <div>
-            <h2>Add Bank Account</h2>
+            <h2>All Items</h2>
         </div>
       </div>
 
-      <!-- Automatic Add Bank section start from here -->
+      <div class="row">
+          <div class="col-sm-12">
+              <div class="active-bx">
+                  <div class="active-items">
+                      <select selected> 
+                        <option>All Items</option>
+                        <option>Active Items</option>
+                        <option>New Items</option>
+                        <option>Item List</option>
+                      </select>
+                  </div>
+                  <div class="d-flex">
+                      <a href="new-items.html" class="add-new"><i class="ri-add-circle-fill"></i> New</a>
+                      <a href="#" class="add-new"><i class="ri-more-fill"></i></a>
+                  </div>
+              </div>
+            <!-- table start here -->
+              <table class="table table-striped  tablebx">
+                  <thead>
+                    <tr>
+                      <th scope="col"><input type="checkbox" class="name-check">Name</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Rate</th>
+                      <th scope="col">Usage Unit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                      <td> <input type="checkbox"> CDE</td>
+                      <td></td>
+                      <td>400.00</td>
+                      <td>cm</td>
+                    </tr>
 
-      <div class="add-bank">
-          <div class="add-headingbx">
-              <h2>Automatic Bank Feeds Supported Banks</h2>
-              <p>Connect.your bank accounts and fetch the bank feeds using one of our third-party bank<br> feeds service providers.</p>
-          </div>
+                    <tr>
+                      <td>  <input type="checkbox"> erty</td>
+                      <td></td>
+                      <td>@1,234.00</td>
+                      <td>box</td>
+                    </tr>
+                  
+                  </tbody>
+               </table>
 
-          <div class="connect-bx">
-            <button class="connect-btn">
-                Connect Now
-            </button>
+               <!-- table end from here -->
           </div>
       </div>
-
-      <!-- Automatic Add Bank section end from here -->
-
-
-      <!-- Manually Add Bank section start from here -->
-
-      <div class="add-bank">
-          <div class="add-headingbx">
-              <h2> <i class="ri-add-circle-fill"></i> Add bank accounts manually</h2>
-              <p>Unable to connect your bank account through our service providers? Add you bank accounts manually <br>by entering your account details.</p>
-          </div>
-
-          <div class="connect-bx">
-            <a href="add-manually.html" class="connect-btn">
-                Add Manually
-            </a>
-          </div>
-      </div>
-
-      <!-- Manually Add Bank section end from here -->
- </section>
-
- 
-       <!-- tax & gst section codes end here -->
+      </section>
+      <!-- Items section end from here -->
     </div>
     <!-- Main Col END -->
   </div><!-- body-row END -->
@@ -399,13 +435,6 @@ $(document).ready(function(){
   });
 
 });
-
-
-// for tooltip
-
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
 </script>
 
 <!-- for year in drop down plugin -->

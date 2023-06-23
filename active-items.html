@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Add Bank Account</title>
+  <title>Active Items</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content=""/>
@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <!---------------- Menu Section Codes Start From Here --------------->
@@ -109,6 +108,31 @@
                 </a>
                 <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="menu-collapsed">Password</span>
+                </a>
+            </div>
+
+
+            <a href="#submenu3" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="ri-profile-fill mr-3"></span>
+                    <span class="menu-collapsed ">Items</span>
+                    <span class="ml-auto ri-arrow-down-s-line"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id='submenu3' class="collapse sidebar-submenu">
+                <a href="new-items.html " class="list-group-item list-group-item-action bg-dark text-white active">
+                    <span class="menu-collapsed">New Items</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Item List</span>
+                </a>
+                <a href="active-items.html" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Active Items</span>
+                </a>
+
+                 <a href="all-items.html" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">All Items</span>
                 </a>
             </div>
             <a href="#" class="bg-dark list-group-item list-group-item-action">
@@ -256,53 +280,188 @@
           </div>
       </div>
 
-      <!-- Add bank account section codes start here -->
+      <!-- Items section start from here -->
 
-    <section class="py-5 header personal-section2 col-sm-8">
+
+       <section class="py-5 header personal-section2 col-sm-8">
       <div class="edit-header">
         <div>
-            <h2>Add Bank Account</h2>
+            <h2>Active Items</h2>
         </div>
       </div>
 
-      <!-- Automatic Add Bank section start from here -->
+      <div class="row">
+          <div class="col-sm-4">
+              <div class="active-bx">
+                  <div class="active-items">
+                      <select selected> 
+                        <option>Active Items</option>
+                        <option>All Items</option>
+                        <option>New Items</option>
+                        <option>Item List</option>
+                      </select>
+                  </div>
+                  <div class="d-flex">
+                      <a href="new-items.html" class="add-new"><i class="ri-add-circle-fill"></i> New</a>
+                      <a href="#" class="add-new"><i class="ri-more-fill"></i></a>
+                  </div>
+              </div>
 
-      <div class="add-bank">
-          <div class="add-headingbx">
-              <h2>Automatic Bank Feeds Supported Banks</h2>
-              <p>Connect.your bank accounts and fetch the bank feeds using one of our third-party bank<br> feeds service providers.</p>
+              <div class="item-listbx">
+                  <ul class="child-list">
+                      <li><input type="checkbox">erty</li>
+                      <li><input type="checkbox">CDE</li>
+                  </ul>
+              </div>
           </div>
+          <div class="col-sm-8"  id="exTab1">
+            <!-- Tab nav -->
+            <div class="tab-navbax">
+                <div class="tab-name">
+                    <h5>erty</h5>
+                </div>
+                <div class="more">
+                    <a href="#" class="edit-pen"><i class="ri-edit-2-fill"></i></a>
+                    <a href="#" class="edit-more">More <i class="ri-arrow-down-s-fill"></i></a>
+                    <a href="#" class="close-icon">X</a>
 
-          <div class="connect-bx">
-            <button class="connect-btn">
-                Connect Now
-            </button>
+                </div>
+            </div>
+
+            <div id="exTab1" class="container"> 
+           <ul  class="nav nav-pills">
+            <li class="active">
+             <a  href="#1a" data-toggle="tab" class="active">Overview</a>
+            </li>
+            <li><a href="#2a" data-toggle="tab">Transactions</a>
+            </li>
+            <li><a href="#3a" data-toggle="tab">History</a>
+            </li>
+      
+           </ul>
+            <div class="tab-content clearfix">
+              <div class="tab-pane active" id="1a">
+                <!-- 1st -->
+                   <div class="overviewbx">
+                     <div>
+                         <ul class="item-list ">
+                             <li>Item Type</li>
+                             <li>Unit</li>
+                             <li>Created Source</li>
+                         </ul>
+                     </div>
+                     <div class="sub-item-bx">
+                         <ul class="sub-item-list">
+                             <li>Sales and Purchase Items</li>
+                             <li>Box</li>
+                             <li>User</li>
+                         </ul>
+                     </div>
+                 </div>
+
+                 <!-- 2nd -->
+
+                 <h4 class="h4">Purchase Information</h4>
+                   <div class="overviewbx">
+                     <div>
+                         <ul class="item-list ">
+                             <li>Cost Price</li>
+                             <li>Purchase</li>
+                             <li>Account</li>
+                         </ul>
+                     </div>
+                     <div class="sub-item-bx">
+                         <ul class="sub-item-list">
+                             <li>432.00</li>
+                             <li>Cost of Goods Sold</li>
+                             <li></li>
+                         </ul>
+                     </div>
+                 </div>
+
+                 <!-- 3rd -->
+
+                   <h4 class="h4">Sales Information</h4>
+                   <div class="overviewbx">
+                     <div>
+                         <ul class="item-list ">
+                             <li>Selling Price</li>
+                             <li>Sales Account</li>
+                         </ul>
+                     </div>
+                     <div class="sub-item-bx">
+                         <ul class="sub-item-list">
+                             <li>1,234.00</li>
+                             <li>Sales</li>
+                             <li></li>
+                         </ul>
+                     </div>
+                 </div>
+
+               </div>
+              <div class="tab-pane" id="2a">
+                 <div class="filterbx">
+
+                    <!-- first fileter -->
+                    <div class="dropdown">
+                      <button class="filter-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Filter By:
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">All</a>
+                        <a class="dropdown-item" href="#">Draft</a>
+                        <a class="dropdown-item" href="#">Sent</a>
+                        <a class="dropdown-item" href="#">Client Viewed</a>
+                        <a class="dropdown-item" href="#">Accepted</a>
+                        <a class="dropdown-item" href="#">Invoiced</a>
+                        <a class="dropdown-item" href="#">Declined</a>
+                        <a class="dropdown-item" href="#">Expired</a>
+                      </div>
+                    </div>
+
+
+                    <!-- 2nd filter -->
+
+                      <div class="dropdown ml-3">
+                      <button class="filter-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Status:
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <a class="dropdown-item" href="#">All</a>
+                        <a class="dropdown-item" href="#">Draft</a>
+                        <a class="dropdown-item" href="#">Client Viewed</a>
+                        <a class="dropdown-item" href="#">Accepted</a>
+                        <a class="dropdown-item" href="#">Invoiced</a>
+                        <a class="dropdown-item" href="#">Declined</a>
+                        <a class="dropdown-item" href="#">Expired</a>
+                      </div>
+                    </div>
+                 </div>
+                 <p class="output-para">There are no quotes</p>
+              </div>
+            <div class="tab-pane" id="3a">
+           <div class="overviewbx">
+             <div>
+                 <ul class="item-list ">
+                     <li>DATE</li>
+                     <li>22/06/2023 04:34 PM</li>
+                 </ul>
+             </div>
+             <div class="sub-item-bx">
+                 <ul class="sub-item-list">
+                     <li>Details</li>
+                     <li><b>Created By</b>-Ivan Sinha</li>
+                     <li></li>
+                 </ul>
+             </div>
+         </div>
+            </div>
+            </div>
           </div>
+        </div>
       </div>
-
-      <!-- Automatic Add Bank section end from here -->
-
-
-      <!-- Manually Add Bank section start from here -->
-
-      <div class="add-bank">
-          <div class="add-headingbx">
-              <h2> <i class="ri-add-circle-fill"></i> Add bank accounts manually</h2>
-              <p>Unable to connect your bank account through our service providers? Add you bank accounts manually <br>by entering your account details.</p>
-          </div>
-
-          <div class="connect-bx">
-            <a href="add-manually.html" class="connect-btn">
-                Add Manually
-            </a>
-          </div>
-      </div>
-
-      <!-- Manually Add Bank section end from here -->
- </section>
-
- 
-       <!-- tax & gst section codes end here -->
+      </section>
+      <!-- Items section end from here -->
     </div>
     <!-- Main Col END -->
   </div><!-- body-row END -->
@@ -399,13 +558,6 @@ $(document).ready(function(){
   });
 
 });
-
-
-// for tooltip
-
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
 </script>
 
 <!-- for year in drop down plugin -->
