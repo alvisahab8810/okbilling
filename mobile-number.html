@@ -313,17 +313,30 @@
                         <img src="images/mobile1.png" alt="Email-Image"> 
                         <h2 class="email-verify">My Mobile Numbers</h2>
                         <p class="message">View and manage all of the mobile numbers associated with your account.</p>
-                        <div class="veriembx">
-                          <div>
-                            <p class="unemail"><i class="ri-smartphone-line"></i> (+91) 8527029919</p>
-                            <p class="days">5 Days ago</p>
+                        <div class="veriembx row">
+                          <div class="col-sm-2">
+                            <p class="unemail">
+                                <i class="ri-smartphone-line"></i> 
+                            </p>
                           </div>
-                          <div><button>Set as Primary</button></div>
-                          <div><a href="#" class="delete-btn popup " onclick="myFunction()"><i class="ri-delete-bin-6-line " data-toggle="tooltip" data-placement="left" title="Tooltip on left"></i>
-                             <span class="popuptext" id="myPopup">Delete</span>
-                          </a></div>
+                             
+                            <div class="col-md-8 number-input">
+                              <input type="text" class="form-control r-readonloy" id="inputMobile" readonly="readonly" placeholder=" (+91) 8527029919
+                              ">
+                            </div>
+                            <!-- <p class="days">5 Days ago</p> -->
+
+
+                          <div class="col-sm-2"><a href="#" class="delete-btn popup " onclick="myFunction()"><i class="ri-edit-2-fill " data-toggle="tooltip" data-placement="left" title="Tooltip on left"></i>
+                             <span class="popuptext" id="myPopup">Edit</span>
+                          </a>
+                         </div>
                         </div>
-                          <!-- <div><button class="add-btn"> Add Email</button></div> -->
+                          <!-- <div><a href="#" class="edit-btn1">Update</a></div> -->
+                        <div class="save-btnbx">
+                            <button type="button" class="save-btn">Save</button>
+                            <button type="button" class="close-btn" data-dismiss="modal">Cancel</button>
+                         </div>
                        </div>
                     </div>
                 </div>

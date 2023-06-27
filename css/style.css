@@ -1,13 +1,17 @@
 /*default Css Start Here*/
-body, p, h1, h2, h3, h4, h5, h6, ul, li{margin:0px;padding:0; }
+body, p, ul, li{margin:0px;padding:0; }
 body{
     overflow-x: hidden;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 a{text-decoration: none;}
 a:hover{text-decoration: none!important;}
 li{list-style: none;}
 
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Josefin Sans', sans-serif!important ;
+}
 /*default Css End Here*/
 
 /*Navbar Codes Start From Here*/
@@ -77,6 +81,7 @@ li{list-style: none;}
 .prfl-bx li{
     margin: 5px 0px;
     position: relative;
+    /* padding: 0px; */
 }
 .status{
     display: flex;
@@ -345,7 +350,7 @@ ul.prfl-panel {
 .page-header{
     background: white;
     padding: 8px 18px 2px 15px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    box-shadow: rgb(198 195 195 / 21%) 0px 4px 6px;
 }
 
 .py-2 {
@@ -421,7 +426,7 @@ footer{
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #b21bb3!important;
+    color: #611787!important;
     background: none!important;
 }
 .edit-header{
@@ -446,14 +451,12 @@ footer{
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-top: 11px;
 }
 .unemail i{
     height: 40px;
     width: 40px;
     background: #611787;
     color: white;
-    margin-right: 5px;
     border-radius: 50px;
     font-size: 16px;
     padding: 8px;
@@ -464,9 +467,9 @@ footer{
 }
 .veriembx{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    padding-top: 14px;
+    padding-top: 24px;
 }
 
 .veriembx button{
@@ -497,17 +500,15 @@ footer{
 .message{
     text-align: center;
 }
-i.ri-delete-bin-6-line {
+i.ri-edit-2-fill {
     height: 30px;
     align-items: center;
     display: flex;
     width: 30px;
     color: #615b5b;
-    margin-top: 5px;
     background: #bbbec4bf;
     border-radius: 50px;
     padding: 7px;
-    margin-left: 7px;
 }
 @media(max-width: 1600px){
 
@@ -546,15 +547,23 @@ i.ri-delete-bin-6-line {
 }
 
 .edit-btn1 {
-    padding: 2px 15px;
-    background: #b21bb3;
-    justify-content: center;
-    /* align-items: center; */
-    border: none;
-    margin: 30px auto;
-    color: white;
+    padding: 4px 26px;
+    font-size: 14px;
+    outline: unset;
+    text-decoration: unset;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    transition: 0.3s;
+    position: relative;
     display: table;
-    border-radius: 4px;
+    margin: auto;
+    background: #611787;
+    border: 1px solid #611787 !important;
+    /*clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0);*/
+    box-shadow: inset 0 0 0 1px white;
 }
 
 .days{
@@ -597,8 +606,8 @@ i.ri-delete-bin-6-line {
   position: absolute;
   z-index: 1;
   font-size: 12px;
-  bottom: 102%;
-  right: -42%;
+  bottom: 123%;
+  right: -50%;
   /* margin-left: -80px; */
 }
 
@@ -760,20 +769,20 @@ textarea:focus, input:focus{
     border-radius: 10px;
     padding-bottom: 0!important;
     padding-top: 27px!important;
-    margin-top: 7px;
+    margin-top: 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 8px 6px 2px;
 }
 
 
 /*choose file css*/
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-}
+}*/
 .form-container {
   width: 100vw;
   height: 100vh;
@@ -784,9 +793,9 @@ body {
 }
 .upload-files-container {
   background-color: #ffffff;
-  width: 200px;
-  padding: 4px 55px;
-  border-radius: 40px;
+  width: auto;
+  padding: 8px 15px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -796,11 +805,10 @@ body {
 }
 .drag-file-area {
   border: 2px dashed #611787;
-  border-radius: 40px;
+  border-radius: 8px;
   padding-top: 10px;
   margin: 10px 0 15px;
   padding: 1px 7px;
-  width: 158px;
   text-align: center;
 }
 .drag-file-area .upload-icon {
@@ -1569,7 +1577,7 @@ ul.tab-left li {
 }
 
 a.active {
-  border-bottom: 2px solid #b21bb3;
+  border-bottom: 2px solid #611787;
 }
 
 .nav-link {
@@ -2071,4 +2079,103 @@ button.update-btn {
 .create-designation a i{
     margin-right: 5px;
     font-size: 17px;
+}
+.mleft{
+    margin-left: 5px;
+}
+.mleft1{
+    margin-left:22px;
+}
+.radibox{
+    padding-bottom: 20px;
+}
+
+.edit-btn1:hover {
+    color: #611787;
+    background: white;
+}
+
+
+.subpport-bx a i{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 5px;
+}
+.subpport-bx a{
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.number-input{
+    padding-left: 0;
+}
+.save-btn{
+    padding: 6px 20px;
+    font-size: 14px;
+    outline: unset;
+    text-decoration: unset;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    transition: 0.3s;
+    position: relative;
+    outline: none;
+
+    display: table;
+    background: #611787;
+    border: 1px solid #611787 !important;
+    /*clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0);*/
+    box-shadow: inset 0 0 0 1px white;
+}
+
+.close-btn{
+    padding: 4px 15px;
+    font-size: 14px;
+    outline: unset;
+    text-decoration: unset;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    transition: 0.3s;
+    position: relative;
+    outline: none;
+    display: table;
+    background: #545b62;
+    border: 1px solid #611787 !important;
+    /*clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0);*/
+    box-shadow: inset 0 0 0 1px white;
+    margin-left: 10px;
+}
+
+.save-btnbx{
+    padding-top: 30px;
+    display: flex;
+}
+
+.verify-btn {
+    padding: 3px 6px;
+    font-size: 13px;
+    outline: unset;
+    text-decoration: unset;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    transition: 0.3s;
+    position: relative;
+    outline: none;
+    display: table;
+    background: #611787;
+    border: 1px solid #611787 !important;
+    /* clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0); */
+    box-shadow: inset 0 0 0 1px white;
 }

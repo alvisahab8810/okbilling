@@ -11,6 +11,12 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- Roboto font cdn -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Josephin sand cdn -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <!---------------- Menu Section Codes Start From Here --------------->
@@ -29,8 +35,6 @@
       
             <!-- /END Separator -->
             <!-- Menu with submenu -->
-
-           
                <div class="col-sm-2 logo">
                  <a href="index.html">
                    <img src="images/logo/logo.png">
@@ -318,18 +322,36 @@
                        <form>
                           <div class="form-row personal">
                             <div class="form-group col-md-6">
-                              <label for="inputName4">Full Name</label>
-                              <input type="name" class="form-control" id="inputName4" >
+                              <label for="inputFristName">First Name</label>
+                              <input type="name" class="form-control" id="inputFristName" >
                             </div>
                             <div class="form-group col-md-6">
-                              <label for="inputNickname4">Nick Name</label>
-                              <input type="name" class="form-control" id="inputNickname4">
+                              <label for="inputLastName">Last Name</label>
+                              <input type="name" class="form-control" id="inputLastName">
                             </div>
                           </div>
-                          <div class="form-group">
-                            <label for="inputgender">Gender</label>
-                            <input type="text" class="form-control" id="inputgender" >
+
+                            <label for="inputgender">Gender</label><br>
+                          <div class="col-auto my-1 row radibox">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                            <label class="form-check-label" for="autoSizingCheck2">
+                              Male
+                            </label>
                           </div>
+                          <div class="form-check">
+                            <input class="form-check-input mleft" type="checkbox" id="autoSizingCheck2">
+                            <label class="form-check-label mleft1" for="autoSizingCheck2">
+                              Female
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input mleft" type="checkbox" id="autoSizingCheck2">
+                            <label class="form-check-label mleft1" for="autoSizingCheck2">
+                              Others
+                            </label>
+                          </div>
+                        </div>
                           <div class="form-group">
                             <label for="inputCountry2">Country</label>
                             <input type="text" class="form-control" id="inputCountry2">

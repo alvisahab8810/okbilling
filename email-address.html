@@ -318,13 +318,35 @@
                <div class=" email-tabbx" id="v-pills-profile">
                         <img src="images/emal.jpg" alt="Email-Image"> 
                         <h2 class="email-verify">Verify your email address</h2>
-                        <p class="unemail"><i class="ri-mail-forbid-line"></i> ivan.sinha@jithvar.com</p>
+                            <div class="veriembx row">
+                          <div class="col-sm-2">
+                            <p class="unemail">
+                                <i class="ri-mail-forbid-line"></i> 
+                            </p>
+                          </div>
+                             
+                            <div class="col-md-8 number-input">
+                              <input type="text" class="form-control r-readonloy" id="inputMobile" readonly="readonly" placeholder="ivan.sinha@jithvar.com
+                              ">
+                            </div>
+                            <!-- <p class="days">5 Days ago</p> -->
+
+
+                          <div class="col-sm-2"><a href="#" class="delete-btn popup " onclick="myFunction()"><i class="ri-edit-2-fill " data-toggle="tooltip" data-placement="left" title="Tooltip on left"></i>
+                             <span class="popuptext" id="myPopup">Edit</span>
+                          </a>
+                         </div>
+                        </div>
                         <div class="veriembx">
                           <div> <p class="unverify-text">This E-mail address is unverified</p></div>
 
-                          <div><button>Verify Now</button></div>
+                          <div><a href="#"class="verify-btn">Verify Now</a></div>
                         </div>
-                          <!-- <div><button class="add-btn"> Add Email</button></div> -->
+
+                       <div class="save-btnbx">
+                        <button type="button" class="save-btn">Save</button>
+                        <button type="button" class="close-btn" data-dismiss="modal">Cancel</button>
+                     </div>
                   </div>
              </div>
           </div>
