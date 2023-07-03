@@ -538,11 +538,9 @@ i.ri-edit-2-fill {
 .personal-section1{
     padding: 20px;
     padding-bottom: 20px!important;
-    margin: auto;
     padding-top: 34px!important;
     border-radius: 10px;
     padding-bottom: 0!important;
-    margin-top: 18px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 8px 6px 2px;
 }
 
@@ -559,6 +557,7 @@ i.ri-edit-2-fill {
     transition: 0.3s;
     position: relative;
     display: table;
+    margin-top: 15px!important;
     margin: auto;
     background: #611787;
     border: 1px solid #611787 !important;
@@ -765,11 +764,10 @@ textarea:focus, input:focus{
 .personal-section2 {
     padding: 17px;
     padding-bottom: 20px!important;
-    margin: auto;
+    max-width: 900px;
     border-radius: 10px;
     padding-bottom: 0!important;
     padding-top: 27px!important;
-    margin-top: 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 8px 6px 2px;
 }
 
@@ -915,10 +913,9 @@ body {
     justify-content: center;
 }
 
-.dropbx{
+.dropbx .drop{
     display: flex;
-    align-items: center;
-    justify-content: center;
+   
 }
 .mdry{
     color: red;
@@ -1908,7 +1905,6 @@ ul.sub-item-list li {
 
 a.edit-pen {
     padding: 5px 10px;
-    border: 1px solid #ddd;
     border-radius: 5px;
     color: black;
     margin-right: 10px;
@@ -2135,7 +2131,7 @@ button.update-btn {
 }
 
 .close-btn{
-    padding: 4px 15px;
+    padding: 6px 14px;
     font-size: 14px;
     outline: unset;
     text-decoration: unset;
@@ -2178,4 +2174,106 @@ button.update-btn {
     border: 1px solid #611787 !important;
     /* clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0); */
     box-shadow: inset 0 0 0 1px white;
+}
+
+
+.crop-btn {
+    padding: 4px 23px;
+    margin-top: 10px;
+    width: 100px;
+    margin-left: 20px;
+    font-size: 14px;
+    outline: unset;
+    text-decoration: unset;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+    transition: 0.3s;
+    position: relative;
+    display: table;
+    /* margin: auto; */
+    background: #611787;
+    border: 1px solid #611787 !important;
+    /* clip-path: polygon(100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 0); */
+    box-shadow: inset 0 0 0 1px white;
+}
+.more{
+    display: flex;
+    align-items: center;
+}
+.addressbx h2{
+    font-size: 17px;
+    font-weight: 600;
+    color: #00000094
+}
+
+.addressbx {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+
+ul.social-media-bx {
+}
+
+ul.social-media-bx li {
+    margin: 10px 14px;
+}
+
+ul.social-media-bx li a {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background: #f5f5f5;
+    justify-content: center;
+    color: black;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+    transition: .7s;
+}
+ul.social-media-bx li a:hover {
+    background: #611787;
+    color: white;
+}
+.socialbx{
+    display: flex;justify-content:center;align-items: center;
+}
+.main-section{
+    height: 76vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-input input{
+  margin-top: 13px;
+}
+.edit-pen1 i{
+  margin-top: 18px;
+}
+
+.done-bx a i {
+    height: 30px;
+    align-items: center;
+    display: flex;
+    width: 30px;
+    color: #615b5b;
+    background: #bbbec4bf;
+    border-radius: 50px;
+    padding: 7px;
+}
+ #organaization-address .modal-dialog {
+    max-width: 40%!important;
+}
+
+.main-section1 {
+    /* height: 94vh; */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
